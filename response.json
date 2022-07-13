@@ -1,0 +1,13 @@
+{
+  "msgId": "uuid",
+  "msgType": "CheckBlackList",
+  "user": {
+    "firstname": "Aleksei",
+    "lastname": "Krivel",
+    "passport": {
+      "series": "1234",
+      "number": "123456"
+    }
+  },
+  "isInBlackList": false
+}
