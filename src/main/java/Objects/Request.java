@@ -1,5 +1,6 @@
 package Objects;
 
+import Objects.DataBaseObjects.Check;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 
 @JsonAutoDetect
