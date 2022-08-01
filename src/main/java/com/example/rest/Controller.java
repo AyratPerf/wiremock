@@ -13,11 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 
     private Check check = new Check();
-    boolean isInBL = check.checker("Ayrat", "Karimov", 1212, 123123);
 
 
     @PostMapping("/request")
     public Request request(@RequestBody Request request) {
+        boolean isInBL = check.checker(request.user.getFirstname(), request.user.getLastname(),
+                request.user.passport.getSeries(), request.user.passport.getNumber());
         return new Request(request.getMsgId(), request.getMsgType(), request.getUser(), isInBL);
     }
 }
